@@ -1,13 +1,14 @@
 .home {
     text-align: center;
-    padding:100px;
+    padding:200px;
     background: url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97') no-repeat center center/cover;
     color:gray; /* Ensures text remains visible */
+    /* height: 100vh; */
 }
 
 .container {
     max-width: 900px;
-    margin: auto;
+    margin: auto; 
     background: rgba(0, 0, 0, 0.6); /* Dark overlay for better readability */
     padding: 30px;
     border-radius: 10px;

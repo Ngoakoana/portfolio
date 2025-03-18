@@ -1,21 +1,26 @@
 footer {
     background-color: #d3d3d3; /* Light gray background */
     color: #333; /* Darker text for contrast */
+    /* position: absolute; */
+    /* bottom: 0; */
+    width: 100%;
+    padding: 20px 0; /* Optional: Add some padding */
 }
 
 .bg-gray-100 {
     background-color: #d3d3d3; /* Ensure footer bottom section also has light gray */
 }
+
 body, html {
-    height: 100%;
+    /* height: 100%; */
     margin: 0;
-  
+}
+
+body {
+    display: flex;
+    flex-direction: column;
 }
 
 footer {
-    position: absolute;
-  
-    bottom: 0;
-    width: 100%;
-    background-color: #f7f7f7; /* Optional: Background color for the footer */
+    /* margin-top: auto; */
 }

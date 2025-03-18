@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './footer.component.css'
 })
 export class FooterComponent {
+showContactModal() {
+throw new Error('Method not implemented.');
+}
 
 }

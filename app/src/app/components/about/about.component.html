@@ -1,7 +1,7 @@
 <app-navbar></app-navbar>
 <section class="about">
     <div class="container px-6 py-12 mx-auto">
-        <!-- Back Button -->
+        
         <a href="javascript:history.back()" class="back-button text-lg text-gray-700 hover:text-gray-900">← Back</a>
 
         <div class="image-container my-8 text-center">
@@ -18,14 +18,7 @@
                 As a burn survivor and disability advocate, I am committed to creating inclusive and accessible technology solutions.
             </p>
             
-            <!-- Contact Me Button -->
-            <!-- <a 
-                href="javascript:void(0)" 
-                class="inline-flex items-center justify-center bg-gray-600 text-white text-lg font-medium px-8 py-3 rounded-lg shadow-md hover:bg-lightgray-700 transition-all duration-300"
-                onclick="showContactModal()"
-            >
-                Contact Me
-            </a> -->
+            
             <a 
            
             class="inline-flex items-center justify-center bg-gray-600 text-white text-lg font-medium px-8 py-3 rounded-lg shadow-md hover:bg-gray-700 transition-all duration-300"
@@ -40,19 +33,6 @@
 
 <app-footer></app-footer>
 
-<!-- Hidden Contact Details Section -->
-<div id="contact-details" class="hidden container px-6 py-12 mx-auto text-center mt-12">
-    <h2 class="text-3xl font-semibold text-gray-900 mb-4">Contact Details</h2>
-    <p class="text-lg text-gray-700 mb-4">Feel free to reach out to me via the following:</p>
-    <p class="text-base text-gray-600 mb-4">Phone: <strong>0764039976</strong></p>
-    <p class="text-base text-gray-600 mb-4">Email: <strong>mphagonr460"&#64;"gmail.com</strong></p>
-    <p class="text-base text-gray-600 mb-4">
-        LinkedIn: <strong><a href="https://www.linkedin.com" target="_blank" class="text-blue-600">View Profile</a></strong>
-    </p>
-    <p class="text-base text-gray-600">
-        GitHub: <strong><a href="https://github.com" target="_blank" class="text-gray-600">Visit GitHub</a></strong>
-    </p>
-</div>
 
 <div *ngIf="isModalVisible" class="fixed inset-0 flex justify-center items-center bg-black bg-opacity-50">
     <div class="bg-white p-6 rounded-lg max-w-md w-full">
@@ -76,39 +56,3 @@
 </div>
 
 
-<!-- <section class="h-screen flex items-center justify-center bg-transparent">
-    <div class="max-w-3xl mx-auto px-6 text-center border-2 border-gray-300 rounded-xl p-10 shadow-lg backdrop-blur-md bg-white/10" id="contact-section">
-        <h2 class="text-4xl font-bold text-gray-900 mb-6">Get In Touch</h2>
-        <p class="text-lg text-gray-700 mb-8">
-            I'm always open to new opportunities and exciting projects.  
-            Feel free to reach out!
-        </p>
-        <a 
-            href="javascript:void(0)" 
-            class="inline-flex items-center justify-center bg-blue-600 text-white text-lg font-medium px-8 py-3 rounded-lg shadow-md hover:bg-blue-700 transition-all duration-300"
-            onclick="showContactDetails()"
-            id="contact-button"
-        >
-            Contact Me
-        </a>
-        <div id="contact-details" class="hidden mt-8 text-lg text-gray-700">
-            <p>Phone: <strong>0764039976</strong></p>
-            <p>Email: <strong>mphagonr460"&#64;"gmail.com</strong></p>
-            <p>LinkedIn: <strong><a href="https://www.linkedin.com" target="_blank" class="text-blue-600">View Profile</a></strong></p>
-            <p>GitHub: <strong><a href="https://github.com" target="_blank" class="text-blue-600">Visit GitHub</a></strong></p>
-        </div>
-    </div>
-
-    
-</section>
-
-<app-footer></app-footer>
-
-<script>
-    function showContactDetails() {
-        document.getElementById('contact-button').style.display = 'none'; 
-        document.getElementById('contact-details').classList.remove('hidden'); 
-    }
-</script> -->
-
- 
