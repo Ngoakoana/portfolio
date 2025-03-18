@@ -1,0 +1,21 @@
+footer {
+    background-color: #d3d3d3; /* Light gray background */
+    color: #333; /* Darker text for contrast */
+}
+
+.bg-gray-100 {
+    background-color: #d3d3d3; /* Ensure footer bottom section also has light gray */
+}
+body, html {
+    height: 100%;
+    margin: 0;
+  
+}
+
+footer {
+    position: absolute;
+  
+    bottom: 0;
+    width: 100%;
+    background-color: #f7f7f7; /* Optional: Background color for the footer */
+}
