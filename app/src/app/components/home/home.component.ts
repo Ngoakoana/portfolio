@@ -1,14 +1,15 @@
 import { Component } from '@angular/core';
-import { FooterComponent } from "../../footer/footer.component";
-import { ProjectsComponent } from '../projects/projects.component';
-import { RouterLink } from '@angular/router';
 import { NavbarComponent } from "../../navbar/navbar.component";
+import { FooterComponent } from "../../footer/footer.component";
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [FooterComponent, ProjectsComponent, RouterLink, NavbarComponent],
+  imports: [NavbarComponent, FooterComponent,RouterLink],
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']  // Corrected: 'styleUrl' → 'styleUrls'
+  styleUrl: './home.component.css'
 })
-export class HomeComponent {}  // Ensuring class is properly exported
+export class HomeComponent {
+
+}
