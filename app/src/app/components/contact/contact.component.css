@@ -1,62 +1,204 @@
+Ensure the section takes up the full screen height
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full screen height */
+  background: transparent;
+}
 
-  /* Ensure the section takes up the full screen height */
-  section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Full screen height */
-    background: transparent;
-  }
+/* Styling for the container with text and button */
+section .max-w-3xl {
+  max-width: 768px; /* Ensure max width */
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #D1D5DB; /* Border color (gray-300) */
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.1); /* Light white background with opacity */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  backdrop-filter: blur(10px); /* Glassmorphism effect */
+}
 
-  /* Styling for the container with text and button */
-  .max-w-3xl {
-    max-width: 768px; /* Ensure max width */
-    width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-    border: 2px solid #D1D5DB; /* Border color (gray-300) */
-    border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0.1); /* Light white background with opacity */
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Shadow effect */
-    backdrop-filter: blur(10px); /* Glassmorphism effect */
-  }
+h2 {
+  font-size: 2.25rem; /* Text size for the header */
+  font-weight: 700; /* Bold text */
+  color: black; /* Dark gray text */
+  margin-bottom: 1.5rem;
+}
 
-  h2 {
-    font-size: 2.25rem; /* Text size for the header */
-    font-weight: 700; /* Bold text */
-    color: #1F2937; /* Dark gray text */
-    margin-bottom: 1.5rem;
-  }
+p {
+  font-size: 1.125rem; /* Large text for the paragraph */
+  color: #4B5563; /* Medium gray text */
+  margin-bottom: 2rem;
+}
 
-  p {
-    font-size: 1.125rem; /* Large text for the paragraph */
-    color: #4B5563; /* Medium gray text */
-    margin-bottom: 2rem;
-  }
+/* Button styling */
+section a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightgray; /* Background color */
+  color: gray;
+  font-size: 1.125rem; /* Text size */
+  font-weight: 500;
+  padding: 0.75rem 2rem; /* Padding for button */
+  border-radius: 0.75rem; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Button shadow */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
 
-  /* Button styling */
-  a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #2563EB; /* Blue background */
-    color: white;
-    font-size: 1.125rem; /* Text size */
-    font-weight: 500;
-    padding: 0.75rem 2rem; /* Padding for button */
-    border-radius: 0.75rem; /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Button shadow */
-    transition: background-color 0.3s ease; /* Smooth transition on hover */
-  }
+/* Button hover effect */
+section a:hover {
+  background-color: darkgray; /* Darker color when hovered */
+}
 
-  /* Button hover effect */
-  a:hover {
-    background-color: #1D4ED8; /* Darker blue when hovered */
-  }
-  
-  /* Optional: Footer customization if needed */
-  app-footer {
-    margin-top: 2rem; /* Space for footer */
-  }
+/* Optional: Footer customization if needed */
+app-footer {
+  margin-top: 2rem; /* Space for footer */
+}
 
+/* Ensure the section takes up the full screen height */
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full screen height */
+  background: transparent;
+}
+
+/* Styling for the container with text and button */
+section .max-w-3xl {
+  max-width: 768px; /* Ensure max width */
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #D1D5DB; /* Border color (gray-300) */
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.1); /* Light white background with opacity */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  backdrop-filter: blur(10px); /* Glassmorphism effect */
+}
+
+/* Styling for the header */
+h2 {
+  font-size: 2.25rem; /* Text size for the header */
+  font-weight: 700; /* Bold text */
+  color: black; /* Dark gray text */
+  margin-bottom: 1.5rem;
+}
+
+/* Styling for the paragraph */
+p {
+  font-size: 1.125rem; /* Large text for the paragraph */
+  color: #4B5563; /* Medium gray text */
+  margin-bottom: 2rem;
+}
+
+/* Styling for the contact information items */
+.contact-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.125rem;
+  color: #4B5563; /* Medium gray text */
+}
+
+.contact-item i {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  color: #4B5563;
+}
+
+.contact-text a {
+  color: #4B5563;
+  text-decoration: none;
+}
+
+.contact-text a:hover {
+  text-decoration: underline;
+}
+
+/* Styling for the "Send Message" button */
+.contact-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4CAF50; /* Green background */
+  color: white;
+  font-size: 1.125rem; /* Text size */
+  font-weight: 500;
+  padding: 0.75rem 2rem; /* Padding for button */
+  border-radius: 0.75rem; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Button shadow */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Button hover effect */
+.contact-button:hover {
+  background-color: #45a049; /* Darker green when hovered */
+}
+
+/* Optional: Footer customization if needed */
+app-footer {
+  margin-top: 2rem; /* Space for footer */
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500vh;
+  background: #f8f8f8;
+}
+.container {
+  background: white;
+  padding: 150px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  max-width: 3000px;
+  border-radius: 10px;
+}
+.contact-info {
+  padding: 20px;
+}
+.contact-info h2 {
+  margin-bottom: 10px;
+}
+.contact-info p {
+  font-size: 14px;
+  color: #666;
+}
+.form {
+  flex: 1;
+  padding: 20px;
+}
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+button {
+  background: #d9534f;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.phone-img {
+  width: 120px;
+  margin-right: 20px;
+}

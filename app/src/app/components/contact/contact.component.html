@@ -1,76 +1,38 @@
-<!-- <section class="h-screen flex items-center justify-center bg-transparent">
-    <div class="max-w-3xl mx-auto px-6 text-center border-2 border-gray-300 rounded-xl p-10 shadow-lg backdrop-blur-md bg-white/10" id="contact-section">
-        <h2 class="text-4xl font-bold text-gray-900 mb-6">Get In Touch</h2>
-        <p class="text-lg text-gray-700 mb-8">
-            I'm always open to new opportunities and exciting projects.  
-            Feel free to reach out!
-        </p>
-        <a 
-            href="javascript:void(0)" 
-            class="inline-flex items-center justify-center bg-blue-600 text-white text-lg font-medium px-8 py-3 rounded-lg shadow-md hover:bg-blue-700 transition-all duration-300"
-            onclick="showContactDetails()"
-            id="contact-button"
-        >
-            Contact Me
-        </a>
-        <div id="contact-details" class="hidden mt-8 text-lg text-gray-700">
-            <p>Phone: <strong>0764039976</strong></p>
-            <p>Email: <strong>mphagonr460"&#64;"gmail.com</strong></p>
-            <p>LinkedIn: <strong><a href="https://www.linkedin.com" target="_blank" class="text-blue-600">View Profile</a></strong></p>
-            <p>GitHub: <strong><a href="https://github.com" target="_blank" class="text-blue-600">Visit GitHub</a></strong></p>
-        </div>
-    </div>
-
-    
-</section>
-
-<app-footer></app-footer>
-
-<script>
-    function showContactDetails() {
-        document.getElementById('contact-button').style.display = 'none'; 
-        document.getElementById('contact-details').classList.remove('hidden'); 
-    }
-</script> -->
-
 <app-navbar></app-navbar>
-<section class="h-screen flex items-center justify-center bg-transparent">
+
+ <section class="h-screen flex items-center justify-center bg-transparent">
     <div class="max-w-3xl mx-auto px-6 text-center border-2 border-gray-300 rounded-xl p-10 shadow-lg backdrop-blur-md bg-white/10" id="contact-section">
-        <h2 class="text-4xl font-bold text-gray-600 mb-6">Get In Touch</h2>
+        <h2 class="text-4xl font-bold text-gray-700 mb-6">Let's Connect</h2>
         <p class="text-lg text-gray-600 mb-8">
-            I'm always open to new opportunities and exciting projects.  
-            Feel free to reach out!
+            I'm open to collaborations, projects, and networking opportunities. Feel free to reach out!
         </p>
-        <a 
-            class="inline-flex items-center justify-center bg-gray-500 text-white text-lg font-medium px-8 py-3 rounded-lg shadow-md hover:bg-gray-700 transition-all duration-300"
+        <button 
+            class="inline-flex items-center justify-center bg-gray-600 text-white text-lg font-medium px-8 py-3 rounded-lg shadow-md hover:bg-lightgray-700 transition-all duration-300"
             (click)="showContactModal()"
             id="contact-button"
         >
             Contact Me
-        </a>
+        </button>
     </div>
 </section>
 
-<!-- Modal structure -->
 <div *ngIf="isModalVisible" class="fixed inset-0 flex justify-center items-center bg-black bg-opacity-50">
-    <div class="bg-white p-6 rounded-lg max-w-md w-full">
-        <h3 class="text-2xl font-bold text-gray-600 mb-4">Contact Details</h3>
-        <p class="text-lg text-gray-600 mb-4">
-            Phone: <strong>0764039976</strong>
-        </p>
-        <p class="text-lg text-gray-600 mb-4">
-            Email: <strong>mphagonr460&#64;gmail.com</strong>
-        </p>
-        <p class="text-lg text-gray-600 mb-4">
-            LinkedIn: <strong><a href="https://www.linkedin.com/in/ngoakoana-mphago-a2235a329/?trk=li_LOL_DA_global_careers_jobsgtm_otwGeneral_res_Sep2023_dav2&lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3Bbj%2B55%2FddQfWeMX2C%2F6obMg%3D%3D" target="_blank" class="text-gray-600">View Profile</a></strong>
-        </p>
-        <p class="text-lg text-gray-600 mb-4">
-            GitHub: <strong><a href="https://github.com/account" target="_blank" class="text-gray-600">Visit GitHub</a></strong>
-        </p>
-        <button (click)="closeModal()" class="bg-red-600 text-white px-6 py-2 rounded-lg hover:bg-red-700">
-            Close
-        </button>
+    <div class="bg-white p-6 rounded-lg max-w-md w-full shadow-lg">
+        <h3 class="text-2xl font-bold text-gray-700 mb-4">Contact Details</h3>
+        <div class="text-lg text-gray-600 space-y-3">
+            <p><strong>Phone:</strong> 076 403 9976</p>
+            <p><strong>Email:</strong> <a href="mailto:mphagonr460@gmail.com" class="text-gray-700 hover:underline">mphagonr460"&#64;"gmail.com</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ngoakoana-mphago-a2235a329" target="_blank" class="text-gray-700 hover:underline">View Profile</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/account" target="_blank" class="text-gray-700 hover:underline">Visit GitHub</a></p>
+        </div>
+        
+        <div class="mt-6 text-center">
+            <button (click)="closeModal()" class="bg-red-600 text-white px-6 py-2 rounded-lg hover:bg-red-700 transition-all duration-300">
+                Close
+            </button>
+        </div>
     </div>
 </div>
 
-<app-footer></app-footer>
+<app-footer></app-footer> 
+
